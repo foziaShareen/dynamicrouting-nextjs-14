@@ -1,4 +1,4 @@
-
+import Products from '@/components/Products'
 import React from 'react'
 
  const url="https://jsonserver.reactbd.com/phone"
@@ -10,11 +10,11 @@ import React from 'react'
  }
  
  async function Home() {
-   const data=await getData()
+   const products=await getData()
   
   return (
     <div>
-      <h1>Home Page</h1>
+      <Products products={products}/>
     </div>
   )
 }
