@@ -1,11 +1,14 @@
 import Products from '@/components/Products'
 import React from 'react'
 
- const url="https://jsonserver.reactbd.com/phone"
+ const url="https://jsonserver.reactbd.com/accessories"
+ //const url ="https://dummyjson.com/products"
+ 
+
  async function getData(){
    const res=await fetch(url)
    const data=await res.json()
-   console.log(data)
+   
    return data
  }
  
